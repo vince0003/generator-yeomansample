@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Divinskie</title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<style>
+/*.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+input[type=text], select, textarea {
+    width: 80%;
+    color:black;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 16px;
+    resize: vertical;
+ /*   position: absolute;*/
+
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 45px;
+  width: auto;
+  padding: 7px 14px;
+  position: relative;
+  top:0;
+}
+</style>
+ 	  <script> 
+	    $(function(){
+	      $("#includedHeader").load("header/header.html"); 
+
+	    });
+	     $(function(){
+	      $("#includedFooter").load("footer/footer.html"); 
+
+	    });
+    </script> 
+</head>
+<body>
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgb(3, 96, 56) !important">
+
+        <div >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand" href="admin.html" style="margin-left:100px;"><img src="img/hlogo2.png" alt="logo"></a> 
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn" data-toggle="modal" data-target="#myModal">Add Food</a>
+<!--                           <div class="dropdown-content">
+                            <a href="#" >Appitizer</a>
+                            <a href="#">Main Dish</a>
+                            <a href="#">Dessert</a>
+                          </div> -->
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div style="clear: both"></div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add Food</h4>
+          </div>
+          <div class="modal-body">
+              <div>
+                <p style="font-size:20px;">Upload Images</p><br>
+                
+                  <form action="index.html">
+                   <!--  <label for="fname">Food Name</label><br> -->
+                   <img src="img/upload.png" style="height:180px;top:0;opacity:0.5;">
+                    <input type="text" id="fname" name="foodname" placeholder="Food name.."><br>
+
+                    <!-- <label for="lname">Price</label><br> -->
+                    <input type="text" id="lname" name="price" placeholder="Price.."><br>
+
+                    <!-- <label for="country">Country</label><br> -->
+                    <select id="country" name="country" style="color:black;"><br>
+                        <option value="australia">Category</option>
+                        <option value="australia">Appitizer</option>
+                        <option value="canada">Main Dish</option>
+                        <option value="usa">Dessert</option>
+                    </select>
+
+                    <!-- <label for="subject">Description</label><br> -->
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                  </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<div class="container" style="margin-top:80px;margin-bottom:40px;">
+        <h1 style="opacity:0.3">Food Information</h1>        
+          <table class="table" style="color:black !important;">
+            <thead>
+              <tr>
+                <th>Food Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Salmon Tartare</td>
+                <td>245</td>
+                <td>Appitizer</td>
+                <td>True North salmon, red tobiko, apples & cucumbers, avocado purée, chives, crispy wontons, mixed greens</td>
+                <td> <button type="button" class="btn btn-info">Edit</button>
+                     <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Filipino ribs</td>
+                <td>350</td>
+                <td>Main dish</td>
+                <td>Spareribs glazed with the sweet, tangy taste of the Philippines.</td>
+                <td> <button type="button" class="btn btn-info">Edit</button>
+                     <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Chocolate Fudge Cake</td>
+                <td>150</td>
+                <td>Dessert</td>
+                <td>This is our richest, chocolatiest, moistest cake ever. No one will be able to resist a slice.</td>
+                <td> <button type="button" class="btn btn-info">Edit</button>
+                     <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+</div>
+    <footer style="margin-top:240px;background-color:#09090a;">
+                <div class="container" style="background-color:#09090a;">
+                    <section style="float:left;background-color:#09090a !important;margin-left:0 !important;">
+                        <ul style="margin-left:0 !important;">
+                            <li style="color:white !important;font-size:12px;">Poblacion, Cordova, Cebu</li>
+                            <li style="color:white !important;font-size:12px;">09229723668</li>
+                            <li style="color:white !important;font-size:12px;">vichondriasmaquilang@gmail.com</li>
+                        </ul>
+                    </section>
+                    <section style="float:left;background-color:#09090a !important;">
+                        
+                    </section>
+                    <section style="float:right;background-color:#09090a !important;margin-top:13px;margin-left:20px !important;">
+                            <a href="#" style=""><img src="img/fb.png" style="height:25px;"></a>
+                            <a href="#" ><img src="img/tweet.png" style="height:25px;"></a>
+                            <a href="#" ><img src="img/insta.png" style="height:25px;"></a>
+                        </ul>
+                    </section>
+                </div>
+        </footer>
+</body>
+</html>

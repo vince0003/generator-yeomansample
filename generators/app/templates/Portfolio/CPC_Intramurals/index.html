@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="sweetalert.css">
+	<script type="text/javascript" src="sweetalert.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<style type="text/css">
+
+
+
+</style>
+<body>
+<div class="back">
+<div style="opacity:0.7;position:fixed;width:100%;z-index:2;">
+<nav class="navbar navbar-inverse" style="height:60px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CPC Intramurals</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#speaker"> Speaker</a></li>
+        <li><a href="#sponsor"> Sponsor</a></li>
+        <li><a href="#past event"> Past Event</a></li>
+        <li><a href="#contact"> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<center>
+<div  style="" class="dd">
+<div>
+	
+	<div class="time">
+	<div id="demo"></div>
+		<ul>
+			<li class="dates">Days</li>
+			<li class="dates">Hours</li>
+			<li class="dates">Minutes</li>
+			<li class="dates">Seconds</li>
+		</ul>
+	</div>
+	</div>
+</div>
+</center>
+</div>
+<div class="container">
+<div class="row" style="margin-bottom:50px;">
+<div class="col-md-5 col-sm-4 col-xs-12" id="wll">
+<h3 class="welcome">Welcome</h3>
+	<span class="welcome">The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...
+Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our nvite page here too!</span>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-5 col-sm-6 col-xs-12">
+	<div class="loginf">
+  <div class="">
+    <!-- <label><b>Email</b></label> -->
+    <h2 class="sign">Sign up for our event</h2>
+
+    <div class="form-group">
+   
+      <input type="email" class="form-control" id="email" placeholder="Enter name" name="email">
+    </div>
+        <div class="form-group">
+  
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+            <div class="form-group">
+  
+      <input type="email" class="form-control" id="email" placeholder="Enter Phone Number" name="email">
+    </div>
+        <div class="form-group">
+  
+      <input type="email" class="form-control" id="email" placeholder="Enter Username" name="email">
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" onclick="popup()" class="btn btn-success" style="width:100%;">Submit</button>
+
+  </div>
+
+</div>
+
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="row">
+	<div class="col-md-3 col-sm-4 col-xs-12">
+	<center>
+	<img src="dances.png" class="img-responsive">
+
+		<h3 class="text-center">Dance Palabas</h3>
+		<span>Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+ and topics. We will have loads of fun.</span>
+			</center>
+	</div>
+		<div class="col-md-1">
+		
+	</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+		<center>
+	<img src="volleybal.png" class="img-responsive">
+	
+		<h3 class="text-center">Volleyball</h3>
+			<span>Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+ and topics. We will have loads of fun.</span>
+		</center>
+	</div>
+	<div class="col-md-1">
+		
+	</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<center>
+	<img src="dances.png" class="img-responsive">
+	
+		<h3 class="text-center">Dance Palabas</h3>
+			<span>Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+ and topics. We will have loads of fun.</span>
+			</center>
+</div>
+</div>
+<div class="row">
+<div class="demo">
+<div class="col-md-1 col-sm-1"></div>
+<div class="col-md-10 col-sm-10">
+<div class="panel-heading" style="background-color:#a3cc40;">
+	<table style="width:100%;">
+		<tr class="text-center">
+			<td>Time</td>
+			<td>Stuff That Will Happen</td>
+			<td>asdas</td>
+		</tr>
+	</table>
+</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		<div class="panel panel-default">
+			<div class="panel-heading" style="background-color:#373737;" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						
+						
+						<table style="width:100%;">
+							<tr>
+								<td>10am - 12pm</td>
+								<td>Stuff That Will Happen</td>
+								<td><i class="more-less glyphicon glyphicon-plus" style="padding:5px;border-radius:50%;background-color:white;"></i></td>
+							</tr>
+						</table>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading"  style="background-color:#4b4d4f;" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<table style="width:100%;">
+							<tr>
+								<td>10am - 12pm</td>
+								<td>Stuff That Will Happen</td>
+								<td><i class="more-less glyphicon glyphicon-plus" style="padding:5px;border-radius:50%;background-color:white;"></i></td>
+							</tr>
+						</table>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" style="background-color:#373737;" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<table style="width:100%;">
+							<tr>
+								<td>10am - 12pm</td>
+								<td>Stuff That Will Happen</td>
+								<td><i class="more-less glyphicon glyphicon-plus" style="padding:5px;border-radius:50%;background-color:white;"></i></td>
+							</tr>
+						</table>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+
+	</div><!-- panel-group -->
+</div>
+<div class="col-md-1"></div>	
+	</div>
+	<div class="row">
+	<div class="col-md-2 col-sm-2"></div>
+		<div class="col-md-8 col-sm-8">
+				<p class="text-center">Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+		</div>
+		<div class="col-md-2 col-sm-2"></div>
+	</div>	
+	</div>
+</div><!-- container -->
+<div style="background:url(intram.png);background-size:100%;height:800px;background-repeat:no-repeat;" id="about">
+	<div class="container abouts" >
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-3 col-sm-3">
+				<img src="cpc.png" class="cpclogo img-responsive">
+			</div>
+			<div class="col-md-8" style="margin-top:100px;">
+					
+
+			</div>
+			<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-7"><h1 class="pull-right">We reward the Elites!</h1></div>
+		<div class="col-md-1"></div>
+			</div>
+			<div class="row" style="margin-top:-100px;">
+				<div class="col-md-4"></div>
+				<div class="col-md-7">
+					<br>
+				<p class="text-right are">
+					Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.
+							</p><br>
+							<p  class="text-right">All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p>
+
+*Be advised, we will only give you Elite thank you swag for each level of elite you cross.That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.
+<br><br>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+					<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-7"><button class="btn btn-success pull-right" style="width:200px;">Bring on the swag!</button></div>
+		<div class="col-md-1"></div>
+	</div>
+	
+		</div>
+			<div class="row" id="speaker" style="margin-top:300px;">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h1>Speakers</h1>
+			<div class="row">
+			<div class="col-md-8">
+				<p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business.Hope you will have a great time listening to our presentations!</p>
+			</div>
+			<div class="col-md-4"></div>
+			</div>
+						<div class="row">
+						<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="tulda.png" style="width:100%;" class="img-responsive">
+				</div>
+				<div class="col-md-3 col-sm-3" id="speak1"><img src="star.png" style="width:100%;" class="img-responsive"></div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="jen.jpg" style="width:100%;" class="img-responsive">
+				</div>
+			</div>
+						<div class="row">
+						<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="star.png" style="width:100%;" class="img-responsive">
+				</div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="star.png" style="width:100%;" class="img-responsive">
+				</div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="star.png" style="width:100%;" class="img-responsive">
+				</div>
+			</div>
+						<div class="row">
+						<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-3 col-sm-3" id="speak1" >
+					<img src="egay.jpg" style="width:100%;" class="img-responsive">
+				</div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="star.png" style="width:100%;" class="img-responsive">
+				</div>
+				<div class="col-md-3 col-sm-3" id="speak1">
+					<img src="square.jpg" style="width:100%;" class="img-responsive">
+				</div>
+			</div>		
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	</div>
+		<div style="background:url(back1.png);width:100%;height:750px;margin-top:100px;">
+		<div class="container" id="sponsor"> 
+				<div class="row" style="padding-top:150px;">
+					<div class="col-md-12" style=""> <h1 class="text-center" style="color:white;">Sponsor Our Event!</h1>
+					<p class="text-center" style="color:white;">If you want to help us making this event lively and successful, help us by sponsoring our event!<br>This will help us bring in more people, have better livestreaming equipment, maybe even our own chef!<br>You can also sponsor us by giving away free swag at the event!<br>Here’s who have sponsored us already:
+					</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-2 col-sm-4"><center><img src="cordova.gif"></center></div>
+					<div class="col-md-2 col-sm-4">
+					<center>
+						<img src="cpc.png" style="margin-bottom:50px;">
+						<button class="btn btn-success" onclick="popup();">Sponsor Us</button>
+					</center>
+					</div>
+					<div class="col-md-2 col-sm-4"><center><img src="deped.png"></center></div>
+					<div class="col-md-3"></div>
+				</div>
+		</div>	
+		</div>
+		<div>
+		<div class="container" id="past event">
+		<div class="row" style="padding-top:50px;padding-bottom:100px;">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-6">
+				<h1>Past Events</h1>
+				<br>
+				Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="vol.jpg" alt="Los Angeles" style="width:100%;height:500px;">
+        <div class="carousel-caption">
+          <h3>Volleyball</h3>
+          <p>imba kai si tabada</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="basket.jpg" alt="New York" style="width:100%;height:500px;">
+        <div class="carousel-caption">
+          <h3>BasketBall</h3>
+          <p>BSIT vs HRM</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="ball.jpg" alt="Chicago" style="width:100%;height:500px;">
+        <div class="carousel-caption">
+          <h3>Volleyball</h3>
+          <p>BSIT vs. BSE</p>
+        </div>
+      </div>
+    
+
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+			</div>
+		</div>
+		<div class="row" style="padding-top:50px;padding-bottom:100px;">
+			<div class="col-md-5">
+				
+			</div>
+			<div class="col-md-2">
+				<center><button class="btn btn-info" onclick="popup();">View More</button></center>
+			</div>
+			<div class="col-md-5">
+				
+			</div>			
+		</div>
+		</div>
+		<div style="" id="contactz">
+		<div class="container">
+			<div class="row" style="margin-top:70px;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 col-sm-12" style="background-color:white;height:400px;">
+					<div class="col-md-1">
+					</div>
+					<div class="col-md-3 col-sm-4" style="margin-top:50px;">
+						<center>
+							<img src="object.png"style="padding-bottom:30px;">
+							
+							<span >Cordova,Public,College
+							Gabi,Cordova,Cebu
+							</span>
+							<div style="padding-top:30px;">
+							<button class="btn btn-success" onclick="popup();">
+								View Map
+							</button>
+							</div>
+						</center>
+					</div>
+					<div class="col-md-1 col-sm-1">
+						
+					</div>
+					<div class="col-md-6 col-sm-6" style="margin-top:30px;">
+					
+						    <div class="form-group">
+						    
+						      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+						    </div>
+						     <div class="form-group">
+						      <textarea class="form-control" style="height:150px;" placeholder="Type Your Message"></textarea>
+						    </div>
+
+						    <div class="checkbox">
+						      <label><input type="checkbox" name="remember" > Remember me</label>
+						    </div>
+						    <button type="submit" onclick="popup();" class="btn btn-default" style="width:100%;background-color:gray;color:white;">Submit</button>
+						 
+					</div>
+
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			</div>
+		
+		</div>
+			<div style="background-color:#90d23d;height:150px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4" style="margin-top:30px;">
+						<center>
+							<img src="facebook.png">
+							<img src="twitter.png">
+							<img src="linkedin.png">
+							<img src="googleplus.png">
+							<img src="tumblr.png">
+							<br>
+							<div style="margin-top:20px;">
+							<span style="color:white;">Hope we see you at the event!</span><br>
+							<span style="color:white;">All Rights Reserved. Cordova Public College © 2017</span>
+							</div>
+						</center>	
+						</div>
+						<div class="col-md-4">
+							
+						</div>												
+					</div>
+				</div>
+			</div>
+
+
+
+</body>
+
+<script>
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+*******************************/
+	function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("August 27, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = " "+ days + " : "+ hours + " : "
+    + minutes + " : " + seconds + " ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+
+<script type="text/javascript">
+	function popup()
+	{
+		swal(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
+	}
+
+</script>
+</html>

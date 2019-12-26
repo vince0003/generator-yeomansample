@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Divinskie</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+<style>
+input[type=text], select, textarea {
+    width: 380px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 45px;
+  width: auto;
+  padding: 7px 14px;
+  position: relative;
+  top:0;
+}
+</style>
+ 	  <script> 
+	    $(function(){
+	      $("#includedHeader").load("header/header.html"); 
+
+	    });
+	     $(function(){
+	      $("#includedFooter").load("footer/footer.html"); 
+
+	    });
+    </script> 
+</head>
+<body>
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgb(3, 96, 56) !important">
+        <div >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="admin.html" style="margin-left:100px;"><img src="img/hlogo2.png" alt="logo"></a> 
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div style="clear: both"></div>
+
+<div class="container" style="margin-top:80px;margin-bottom:40px;">
+    <h2>Contact Us</h2>
+  <form action="index.html" style="float:left;">
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country" style="color:black;">
+        <option value="australia">Location</option>
+      <option value="australia">Cebu</option>
+      <option value="canada">Lapu-Lapu</option>
+      <option value="usa">Mandaue</option>
+    </select><br>
+
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;color:black;"></textarea><br>
+
+    <input type="submit" value="Submit">
+      
+  </form>
+    <!-- Start in Google Map -->
+       
+            <div id="map" style="width:50%;height:560px;float:right;border:0px;margin:0px;padding:0px;"></div> 
+            
+
+            <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(10.252091,123.951097);
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {center: myCenter, zoom: 5};
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+            </script>
+          <!--   <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(10.252091,123.951097),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+            </script> -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARPyfmt55tK5EmIKOEAAktt5YVK_OGz9c&callback=myMap"></script>
+        <!-- End in Google Map -->
+</div>
+<!-- <div id="includedFooter"></div> -->
+<footer style="margin-top:55px;background-color:#09090a;">
+                <div class="container" style="background-color:#09090a;height:70px !important;">
+                    <section style="float:left;background-color:#09090a !important;margin-left:0 !important;">
+                        <ul style="margin-left:0 !important;">
+                            <li style="color:white !important;font-size:12px;">Poblacion, Cordova, Cebu</li>
+                            <li style="color:white !important;font-size:12px;">09229723668</li>
+                            <li style="color:white !important;font-size:12px;">vichondriasmaquilang@gmail.com</li>
+                        </ul>
+                    </section>
+<!--                    <section style="float:left;background-color:#09090a !important;">
+                        
+                    </section> -->
+                    <section style="float:right;background-color:#09090a !important;margin-top:13px;margin-left:20px !important;">
+                            <a href="#" style=""><img src="img/fb.png" style="height:25px;"></a>
+                            <a href="#" ><img src="img/tweet.png" style="height:25px;"></a>
+                            <a href="#" ><img src="img/insta.png" style="height:25px;"></a>
+                        </ul>
+                    </section>
+                </div>
+        </footer>
+</body>
+</html>

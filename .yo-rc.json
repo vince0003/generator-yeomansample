@@ -1,0 +1,13 @@
+{
+  "generator-mocha": {
+    "ui": "tdd",
+    "rjs": false
+  },
+  "generator-node": {
+    "promptValues": {
+      "authorName": "vince0003",
+      "authorEmail": "vince0003linkmalloc@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
